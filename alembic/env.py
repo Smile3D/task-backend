@@ -11,7 +11,6 @@ from models.task import Task
 load_dotenv()
 
 from database.db import Base
-from models.user import User
 
 config = context.config
 config.set_main_option("sqlalchemy.url", os.getenv("DATABASE_URL"))
